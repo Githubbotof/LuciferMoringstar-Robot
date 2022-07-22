@@ -232,7 +232,7 @@ async def cb_handler(bot, update):
             FILE_CAPTION = settings["caption"]
             caption = FILE_CAPTION.format(mention=update.from_user.mention, file_name=title, size=size, caption=files.caption)
             buttons = [[ InlineKeyboardButton("⚡ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚡", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40sasukepicautofilter_bot%0A@{temp.Bot_Username}"),
-                         InlineKeyboardButton("🧩NOTE ENG🧩",show_alert=True) ]]
+                         InlineKeyboardButton("🧩NOTE ENG🧩", await update.answer("🚀𝚃𝙷𝙰𝚃𝚂'𝚂 𝙽𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄..!🚀", show_alert=True) ]]
             if settings["savefiles"]:
                 protect_content = True
             else:
@@ -294,7 +294,7 @@ async def cb_handler(bot, update):
             size = get_size(files.file_size)
             caption = CUSTOM_FILE_CAPTION.format(mention=update.from_user.mention, file_name=title, size=size, caption=files.caption)
             buttons = [[ InlineKeyboardButton("⚡ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚡", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40sasukepicautofilter_bot%0A@{temp.Bot_Username}"),
-                         InlineKeyboardButton("🧩NOTE ENG🧩",show_alert=True) ]]
+                         InlineKeyboardButton("🧩NOTE ENG🧩", await update.answer("🚀𝚃𝙷𝙰𝚃𝚂'𝚂 𝙽𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄..!🚀", show_alert=True) ]]
             try:
                 await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=SAVE_FILES)            
             except Exception as e:
