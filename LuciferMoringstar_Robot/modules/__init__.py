@@ -144,7 +144,7 @@ __Just some kind of fun thing's__
 
 📚 **--Commands and Usage--** :
 
-• __/throw or /dark - to make dart__
+• __/throw or /dart - to make dart__
 • __/goal or /shoot - to make a goal or shoot__
 • __/luck - spin and try your luck__"""
 
