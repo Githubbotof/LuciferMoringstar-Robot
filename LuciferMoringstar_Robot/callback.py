@@ -234,8 +234,7 @@ async def cb_handler(bot, update):
             buttons = [[ InlineKeyboardButton("⚡ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚡", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40sasukepicautofilter_bot%0A@{temp.Bot_Username}"),
                          InlineKeyboardButton("🧩GROUP 1🧩", url="https://t.me/+ThZJO3krPZUxMWQ1"),
                       ],[
-                         InlineKeyboardButton("🧩GROUP 2🧩, url="https://t.me/MOVIEMANIA_ME") 
-                      ]]
+                         InlineKeyboardButton("🧩GROUP 2🧩, url="https://t.me/MOVIEMANIA_ME") ]]
             if settings["savefiles"]:
                 protect_content = True
             else:
@@ -299,8 +298,7 @@ async def cb_handler(bot, update):
             buttons = [[ InlineKeyboardButton("⚡ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚡", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40sasukepicautofilter_bot%0A@{temp.Bot_Username}"),
                          InlineKeyboardButton("🧩GROUP 1🧩", url="https://t.me/+ThZJO3krPZUxMWQ1"),
                       ],[
-                         InlineKeyboardButton("🧩GROUP 2🧩, url="https://t.me/MOVIEMANIA_ME") 
-                      ]]
+                         InlineKeyboardButton("🧩GROUP 2🧩, url="https://t.me/MOVIEMANIA_ME") ]]
             try:
                 await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=SAVE_FILES)            
             except Exception as e:
