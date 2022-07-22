@@ -234,7 +234,7 @@ async def cb_handler(bot, update):
             buttons = [[ InlineKeyboardButton("⚡ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚡", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40sasukepicautofilter_bot%0A@{temp.Bot_Username}"),
                          InlineKeyboardButton("🧩GROUP 1🧩", url="https://t.me/+ThZJO3krPZUxMWQ1"),
                       ],[
-                         InlineKeyboardButton("🧩GROUP 2🧩, url="https://t.me/MOVIEMANIA_ME") ]]
+                         InlineKeyboardButton("🧩GROUP 2🧩", url="https://t.me/MOVIEMANIA_ME") ]]
             if settings["savefiles"]:
                 protect_content = True
             else:
@@ -254,7 +254,7 @@ async def cb_handler(bot, update):
                     try:
                         invite_link = await bot.create_chat_invite_link(GET_FILECHANNEL)      
                         dlFile = await bot.send_cached_media(chat_id=GET_FILECHANNEL, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons))
-                        dlReply = await update.message.reply_text(GETFILE_TEXT.format(mention=update.from_user.mention, file_name=title, file_size=size), reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("📥 🅳︎🅾︎🆆︎🅽︎🅻︎🅾︎🅰︎🅳︎ 📥", url=dlFile.link) ],[ InlineKeyboardButton("⚠️𝙲𝙾𝙽'𝚃 𝙰𝙲𝙲𝙴𝚂𝚂 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴⚠️", url=invite_link.invite_link) ]] ))
+                        dlReply = await update.message.reply_text(GETFILE_TEXT.format(mention=update.from_user.mention, file_name=title, file_size=size), reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("🍀 🅳︎🅾︎🆆︎🅽︎🅻︎🅾︎🅰︎🅳︎ 🍀", url=dlFile.link) ],[ InlineKeyboardButton("🌌𝙲𝙾𝙽'𝚃 𝙰𝙲𝙲𝙴𝚂𝚂 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴🌌", url=invite_link.invite_link) ]] ))
                         await asyncio.sleep(1000)
                         await dlFile.delete()
                         await dlReply.delete()
@@ -298,7 +298,7 @@ async def cb_handler(bot, update):
             buttons = [[ InlineKeyboardButton("⚡ 𝚂𝙷𝙰𝚁𝙴 𝙼𝙴 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙵𝚁𝙸𝙴𝙽𝙳𝚂 ⚡", url=f"https://t.me/share/url?url=Best%20AutoFilter%20Bot%20%0A%40sasukepicautofilter_bot%0A@{temp.Bot_Username}"),
                          InlineKeyboardButton("🧩GROUP 1🧩", url="https://t.me/+ThZJO3krPZUxMWQ1"),
                       ],[
-                         InlineKeyboardButton("🧩GROUP 2🧩, url="https://t.me/MOVIEMANIA_ME") ]]
+                         InlineKeyboardButton("🧩GROUP 2🧩", url="https://t.me/MOVIEMANIA_ME") ]]
             try:
                 await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=SAVE_FILES)            
             except Exception as e:
