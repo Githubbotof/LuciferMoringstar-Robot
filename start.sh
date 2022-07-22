@@ -8,5 +8,5 @@ else
 fi
 cd /LuciferMoringstar-Robot
 pip3 install -U -r requirements.txt
-echo "Starting LuciferMoringstar RoBot...."
+echo "Starting LOKII...."
 python3 main.py
