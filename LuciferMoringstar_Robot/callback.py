@@ -237,7 +237,7 @@ async def cb_handler(bot, update):
                          InlineKeyboardButton("🧩GROUP 2🧩", url="https://t.me/MOVIEMANIA_ME"),
                      ],[ 
                          InlineKeyboardButton("❤️‍🔥 READ EN ❤️‍🔥", url="https://t.me/c/1733129400/437"),
-                         InlineKeyboardButton("❤️‍🔥 READ MA ❤️‍🔥", url="https://t.me/c/1733129400/439"), ]]
+                         InlineKeyboardButton("❤️‍🔥 READ MA ❤️‍🔥", url="https://t.me/c/1733129400/439") ]]
             if settings["savefiles"]:
                 protect_content = True
             else:
@@ -304,7 +304,7 @@ async def cb_handler(bot, update):
                          InlineKeyboardButton("🧩GROUP 2🧩", url="https://t.me/MOVIEMANIA_ME"),
                      ],[ 
                          InlineKeyboardButton("❤️‍🔥 READ EN ❤️‍🔥", url="https://t.me/c/1733129400/437"),
-                         InlineKeyboardButton("❤️‍🔥 READ MA ❤️‍🔥", url="https://t.me/c/1733129400/439"),  ]]
+                         InlineKeyboardButton("❤️‍🔥 READ MA ❤️‍🔥", url="https://t.me/c/1733129400/439") ]]
             try:
                 await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=SAVE_FILES)            
             except Exception as e:
