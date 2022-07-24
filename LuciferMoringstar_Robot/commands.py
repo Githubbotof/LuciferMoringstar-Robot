@@ -84,7 +84,7 @@ async def start(bot: lucifermoringstar_robot, update):
                       [ InlineKeyboardButton("🤖 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 🤖", url=f"t.me/supprotosfmebot"), InlineKeyboardButton("🔥 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 🔥", url="t.me/linkzofallmygroups") ],
                       [ InlineKeyboardButton("🔅 𝙷𝙴𝙻𝙿 🔅", callback_data="help"), InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]]
         await bot.send_sticker(chat_id=update.chat.id, sticker=random.choice(STICKERS))  #random.choice(STICKERS)
-        await bot.send_message(chat_id=update.chat.id, text=START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(pr0fess0r_99))
+        await bot.send_message(chat_id=update.chat.id, text=START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(pr0fess0r_99), disable_web_page_preview=True)
         
 @lucifermoringstar_robot.on_message(filters.command(["admin", "admins"]) & filters.user(ADMINS) & filters.private, group=2)
 async def admin(bot: lucifermoringstar_robot, update):
