@@ -318,7 +318,7 @@ async def cb_handler(bot, update):
             buttons = [[ InlineKeyboardButton("× 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ×", url=f"http://t.me/{temp.Bot_Username}?startgroup=true") ],
                       [ InlineKeyboardButton("🤖 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 🤖", url=f"t.me/supprotosfmebot"), InlineKeyboardButton("🔥 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 🔥", url="t.me/linkzofallmygroups") ],
                       [ InlineKeyboardButton("🔅 𝙷𝙴𝙻𝙿 🔅", callback_data="help"), InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]] 
-            await update.message.edit(START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons))
+            await update.message.edit(START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif update.data == "help":
             try:
@@ -342,20 +342,20 @@ async def cb_handler(bot, update):
                  InlineKeyboardButton("Status", callback_data="status"),
                  InlineKeyboardButton("Home", callback_data="start")
                  ]]                     
-                await update.message.edit(HELP_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons))
+                await update.message.edit(HELP_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
             except MessageNotModified:
                 pass
         elif update.data == "about":
             try:
                 buttons = [[ InlineKeyboardButton("🌟 𝚂𝙾𝚄𝚁𝙲𝙴 🌟", url="https://t.me/linkzofallmygroups")],
                       [ InlineKeyboardButton("𝙷𝙾𝙼𝙴", callback_data="start"), InlineKeyboardButton("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴", callback_data="usage"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data="close") ]]                     
-                await update.message.edit(ABOUT_MESSAGE.format(name=CREATOR_NAME, username=CREATOR_USERNAME, py3_version=temp.PY3_VERSION, pyro_version=temp.PYRO_VERSION, version=temp.BOT_VERSION, source="https://t.me/linkzofallmygroups"), reply_markup=InlineKeyboardMarkup(buttons))
+                await update.message.edit(ABOUT_MESSAGE.format(name=CREATOR_NAME, username=CREATOR_USERNAME, py3_version=temp.PY3_VERSION, pyro_version=temp.PYRO_VERSION, version=temp.BOT_VERSION, source="https://t.me/linkzofallmygroups"), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
             except MessageNotModified:
                 pass
         elif update.data == "usage":
             try:
                 buttons = [[ InlineKeyboardButton("⇇ 𝙱𝙰𝙲𝙺 ⇇", callback_data="about") ]]
-                await update.message.edit(USAGE_MESSAGE.format(CREATOR_NAME, CREATOR_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
+                await update.message.edit(USAGE_MESSAGE.format(CREATOR_NAME, CREATOR_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
             except MessageNotModified:
                 pass
         elif update.data == "status":
