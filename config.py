@@ -21,6 +21,7 @@ API_ID = os.environ.get("API_ID", "6170803")
 # About Bot
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "1905228806:AAH2iahJcg5J6bqpcW11jB9KajwHbIjaslGTY")
 PICS = os.environ.get("PICS", "https://telegra.ph/file/034d53b5ed1d920ecab8b.jpg")
+STICKER = os.environ.get("STICKER", "CAACAgUAAxkBAAIBRWLcGqkQY6eq3FdOnmDy03v6S8pgAAJZBwACWEDhVjuRKDCnf4OTHgQ")
 # Database
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "LuciferMoringstar-Robot")
 DATABASE_URI = os.environ.get("DATABASE_URI", "mongodb+srv://{Username}:{Passs}@cluster0.{clusterID}.mongodb.net/myFirstDatabase?retryWrites=true{iD}=majority")
